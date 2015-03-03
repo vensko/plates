@@ -140,11 +140,11 @@ class Engine
 
     /**
      * Add preassigned template data.
-     * @param  array             $data;
+     * @param  array|\Closure $data;
      * @param  null|string|array $templates;
      * @return Engine
      */
-    public function addData(array $data, $templates = null)
+    public function addData($data, $templates = null)
     {
         $this->data->add($data, $templates);
 
